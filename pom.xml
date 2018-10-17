@@ -92,5 +92,9 @@
         <enabled>true</enabled>
       </snapshots>
     </pluginRepository>
+  <pluginrepository>
+   <id>maven2</id>
+   <url>http://repo1.maven.org/maven2</url>
+</pluginrepository>
   </pluginRepositories>
 </project>
