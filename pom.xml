@@ -59,13 +59,17 @@
         		<extension>
             			<groupId>org.apache.maven.wagon</groupId>
             			<artifactId>wagon-ssh</artifactId>
-            			<version>1.0</version>
+            			<version>2.4</version>
         		</extension>
     		</extensions>
 	</build>
 	<distributionManagement>
-    		<snapshotRepository>
+		<Repository>
       			<id>archiva</id>
+      			<url>http://ec2-34-245-197-207.eu-west-1.compute.amazonaws.com:8081/repository/archiva/</url>
+    		</Repository>
+    		<snapshotRepository>
+      			<id>archivaSNAPSHOT</id>
       			<url>http://ec2-34-245-197-207.eu-west-1.compute.amazonaws.com:8081/repository/archiva/</url>
     		</snapshotRepository>
   	</distributionManagement>
