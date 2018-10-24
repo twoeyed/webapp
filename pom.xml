@@ -55,35 +55,42 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<extensions>
+        		<extension>
+            			<groupId>org.apache.maven.wagon</groupId>
+            			<artifactId>wagon-ssh</artifactId>
+            			<version>1.0</version>
+        		</extension>
+    		</extensions>
 	</build>
 	<distributionManagement>
-    <snapshotRepository>
-      <id>archiva</id>
-      <url>http://ec2-34-245-197-207.eu-west-1.compute.amazonaws.com:8081/repository/archiva/</url>
-    </snapshotRepository>
-  </distributionManagement>
+    		<snapshotRepository>
+      			<id>archiva</id>
+      			<url>http://ec2-34-245-197-207.eu-west-1.compute.amazonaws.com:8081/repository/archiva/</url>
+    		</snapshotRepository>
+  	</distributionManagement>
 
   <repositories>
-  <repository>
-   <id>maven2</id>
-   <url>http://repo1.maven.org/maven2</url>
-  </repository>
-    <repository>
-      <id>archiva</id>
-      <name>Archiva Public Repository</name>
-      <url>http://ec2-34-245-197-207.eu-west-1.compute.amazonaws.com:8081/repository/archiva/</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
+  	<repository>
+   		<id>maven2</id>
+   		<url>http://repo1.maven.org/maven2</url>
+  	</repository>
+    	<repository>
+      		<id>archiva</id>
+      		<name>Archiva Public Repository</name>
+      		<url>http://ec2-34-245-197-207.eu-west-1.compute.amazonaws.com:8081/repository/archiva/</url>
+      		<releases>
+        		<enabled>true</enabled>
+      		</releases>
+      		<snapshots>
+        		<enabled>true</enabled>
+      		</snapshots>
+    	</repository>
   </repositories>
   <pluginRepositories>
-    <pluginRepository>
-      <id>maven2</id>
-      <url>http://repo1.maven.org/maven2</url>
-    </pluginRepository>
-   </pluginRepositories>
+  	<pluginRepository>
+      		<id>maven2</id>
+      		<url>http://repo1.maven.org/maven2</url>
+    	</pluginRepository>
+  </pluginRepositories>
 </project>
