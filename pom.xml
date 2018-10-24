@@ -64,10 +64,10 @@
     		</extensions>
 	</build>
 	<distributionManagement>
-		<Repository>
+		<repository>
       			<id>archiva</id>
       			<url>http://ec2-34-245-197-207.eu-west-1.compute.amazonaws.com:8081/repository/archiva/</url>
-    		</Repository>
+    		</repository>
     		<snapshotRepository>
       			<id>archivaSNAPSHOT</id>
       			<url>http://ec2-34-245-197-207.eu-west-1.compute.amazonaws.com:8081/repository/archiva/</url>
