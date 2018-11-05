@@ -55,22 +55,15 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<extensions>
-        		<extension>
-            			<groupId>org.apache.maven.wagon</groupId>
-            			<artifactId>wagon-ssh</artifactId>
-            			<version>2.4</version>
-        		</extension>
-    		</extensions>
 	</build>
 	<distributionManagement>
 		<repository>
-      			<id>archiva</id>
-      			<url>http://ec2-34-245-197-207.eu-west-1.compute.amazonaws.com:8081/repository/archiva/</url>
+      			<id>nexus</id>
+      			<url>http://ec2-34-242-190-224.eu-west-1.compute.amazonaws.com:8081/repository/nexus/</url>
     		</repository>
     		<snapshotRepository>
-      			<id>archivaSNAPSHOT</id>
-      			<url>http://ec2-34-245-197-207.eu-west-1.compute.amazonaws.com:8081/repository/archiva/</url>
+      			<id>nexusSNAPSHOT</id>
+      			<url>http://ec2-34-242-190-224.eu-west-1.compute.amazonaws.com:8081/repository/nexus/</url>
     		</snapshotRepository>
   	</distributionManagement>
 
@@ -80,9 +73,9 @@
    		<url>http://repo1.maven.org/maven2</url>
   	</repository>
     	<repository>
-      		<id>archiva</id>
-      		<name>Archiva Public Repository</name>
-      		<url>http://ec2-34-245-197-207.eu-west-1.compute.amazonaws.com:8081/repository/archiva/</url>
+      		<id>nexus</id>
+      		<name>Nexus Public Repository</name>
+      		<url>http://ec2-34-242-190-224.eu-west-1.compute.amazonaws.com:8081/repository/nexus/</url>
       		<releases>
         		<enabled>true</enabled>
       		</releases>
