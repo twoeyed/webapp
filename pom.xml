@@ -61,10 +61,6 @@
       			<id>nexus</id>
       			<url>http://ec2-34-242-190-224.eu-west-1.compute.amazonaws.com:8081/repository/nexus/</url>
     		</repository>
-    		<snapshotRepository>
-      			<id>nexusSNAPSHOT</id>
-      			<url>http://ec2-34-242-190-224.eu-west-1.compute.amazonaws.com:8081/repository/nexus/</url>
-    		</snapshotRepository>
   	</distributionManagement>
 
   <repositories>
