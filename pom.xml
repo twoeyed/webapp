@@ -9,8 +9,8 @@
 	<url>http://maven.apache.org</url>
 	
 	<scm>
-		<connection>scm:git:git@github.com:twoeyed/webapp.git</connection>
-		<developerConnection>scm:git:git@github.com:twoeyed/webapp.git</developerConnection>
+		<connection>scm:git:ssh://git@github.com:twoeyed/webapp.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:twoeyed/webapp.git</developerConnection>
 		<url>https://github.com/twoeyed/webapp</url>
 		<tag>${project.version}</tag>
 	</scm>
